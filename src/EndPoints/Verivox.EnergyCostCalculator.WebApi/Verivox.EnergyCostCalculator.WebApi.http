@@ -1,6 +1,6 @@
 @Verivox.EnergyCostCalculator.WebApi_HostAddress = http://localhost:5234
 
-GET {{Verivox.EnergyCostCalculator.WebApi_HostAddress}}/weatherforecast/
+GET {{Verivox.EnergyCostCalculator.WebApi_HostAddress}}/api/getCosts/4000
 Accept: application/json
 
 ###
