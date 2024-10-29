@@ -19,6 +19,9 @@ internal class CostCalculator : ICostCalulator
 
     public async Task<IReadOnlyCollection<ConsumptionCostCalculationResult>> Calculate(decimal consumption)
     {
+        if (consumption < 0) 
+            throw new ArgumentOutOfRangeException(nameof(consumption));
+
         var tariffs = await _tariffProvider.GetTariffs();
 
         var tariffAndCalculators = GetTariffCalculators(tariffs);

@@ -14,4 +14,7 @@
     <ProjectReference Include="..\..\contracts\Verivox.EnergyCostCalculator.Coe.Contracts.ApplicationService\Verivox.EnergyCostCalculator.Coe.Contracts.ApplicationService.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <InternalsVisibleTo Include="Verivox.ECC.Core.Services.ApplicationService.Test" />
+  </ItemGroup>
 </Project>
