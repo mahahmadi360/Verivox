@@ -5,9 +5,9 @@ public enum TariffType
     PackagedTariff = 2
 }
 
-public record TariffDto(TariffType Type,
+public record TariffConfigDto(TariffType Type,
         string Name,
         decimal BaseCost,
         decimal AdditionalKwhCost,
-        decimal? IncludedKwh)
+        decimal IncludedKwh)
 { }

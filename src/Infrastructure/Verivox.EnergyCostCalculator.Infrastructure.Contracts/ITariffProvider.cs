@@ -4,5 +4,5 @@ namespace Verivox.EnergyCostCalculator.Infrastructure.Contracts;
 
 public interface ITariffProvider
 {
-    Task<IReadOnlyCollection<TariffDto>> GetTariffs();
+    Task<IReadOnlyCollection<TariffConfigDto>> GetTariffs();
 }

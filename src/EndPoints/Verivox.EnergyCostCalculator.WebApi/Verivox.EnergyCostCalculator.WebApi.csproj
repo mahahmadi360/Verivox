@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\core\services\Verivox.EnergyCostCalculator.Core.Services.ApplicationService\Verivox.EnergyCostCalculator.Core.Services.ApplicationService.csproj" />
     <ProjectReference Include="..\..\Infrastructure\Verivox.EnergyCostCalculator.Infrastructure.ExternalServices\Verivox.EnergyCostCalculator.Infrastructure.ExternalServices.csproj" />
   </ItemGroup>
 
