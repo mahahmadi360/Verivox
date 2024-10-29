@@ -112,6 +112,35 @@ public class CostCalculatorTest
     }
 
     [Fact]
+    public async Task Calculate_InCaseOfMultipleCalculations_DataIsSorted()
+    {
+        var tariffProviderMock = new Mock<ITariffProvider>();
+        var basicTarifConfig = GenerateTariffConfig("basicTarif", TariffType.BasicElectricityTariff);
+        var packagedTarifConfig = GenerateTariffConfig("packaged Tarif", TariffType.PackagedTariff);
+        tariffProviderMock.Setup(a => a.GetTariffs()).ReturnsAsync(new TariffConfigDto[]
+        {
+            basicTarifConfig,
+            packagedTarifConfig
+        });
+
+        var tariffsCostCalculations = new decimal[] { 5, 6, 7, 4, 3, 8, 1 };
+        var tariffCalculators = new List<ITariffCalculator>();
+        foreach (var cost in tariffsCostCalculations)
+        {
+            var tariffType = cost % 2 == 0 ? TariffType.BasicElectricityTariff : TariffType.PackagedTariff;
+            tariffCalculators.Add(GenerateTariffCalculatorMock(cost, tariffType).Object);
+        }
+        var service = new CostCalculator(tariffProviderMock.Object, tariffCalculators);
+
+        var results = await service.Calculate(100);
+
+        Assert.Equal(tariffsCostCalculations.Length, results.Count);
+        var isOrdered = results.Select(e => e.AnnualCost)
+                            .SequenceEqual(tariffsCostCalculations.OrderBy(a => a));
+        Assert.True(isOrdered);
+    }
+
+    [Fact]
     public void Calculate_IfTarifCalculatorNotDefined_ThrowException()
     {
         var tariffProviderMock = new Mock<ITariffProvider>();
@@ -151,11 +180,11 @@ public class CostCalculatorTest
 
         Assert.ThrowsAsync<ArgumentOutOfRangeException>(() => service.Calculate(-1));
 
-        tariffProviderMock.Verify(a=> a.GetTariffs(),Times.Never());
+        tariffProviderMock.Verify(a => a.GetTariffs(), Times.Never());
         basicTarifCaculatorMock.Verify(a => a.Calculate(It.IsAny<decimal>(), It.IsAny<TariffConfigDto>()), Times.Never());
     }
 
-    private static Mock<ITariffCalculator> GenerateTariffCalculatorMock(int packagedCalculatedCosts, TariffType tariffType)
+    private static Mock<ITariffCalculator> GenerateTariffCalculatorMock(decimal packagedCalculatedCosts, TariffType tariffType)
     {
         var packagedTarifCaculatorMock = new Mock<ITariffCalculator>();
         packagedTarifCaculatorMock.SetupGet(a => a.TariffType).Returns(tariffType);
