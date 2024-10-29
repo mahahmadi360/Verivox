@@ -1,4 +1,4 @@
-﻿using Verivox.EnergyCostCalculator.Coe.Contracts.ApplicationService;
+﻿using Verivox.EnergyCostCalculator.Core.Contracts.ApplicationService;
 using Verivox.EnergyCostCalculator.Coe.Contracts.ApplicationService.Models;
 using Verivox.EnergyCostCalculator.Infrastructure.Contracts;
 using Verivox.EnergyCostCalculator.Infrastructure.Contracts.Models;

@@ -1,6 +1,6 @@
 ﻿using Verivox.EnergyCostCalculator.Infrastructure.Contracts.Models;
 
-namespace Verivox.EnergyCostCalculator.Coe.Contracts.ApplicationService;
+namespace Verivox.EnergyCostCalculator.Core.Contracts.ApplicationService;
 
 public interface ITariffCalculator
 {

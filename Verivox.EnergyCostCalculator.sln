@@ -21,9 +21,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contracts", "Contracts", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{C23108C9-7AFE-4E47-8C24-3CAB9B1A5EB2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Verivox.EnergyCostCalculator.Coe.Contracts.ApplicationService", "core\contracts\Verivox.EnergyCostCalculator.Coe.Contracts.ApplicationService\Verivox.EnergyCostCalculator.Coe.Contracts.ApplicationService.csproj", "{777BA478-B026-40CD-8107-404BD634B669}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Verivox.EnergyCostCalculator.Coe.Contracts.ApplicationService", "src\core\contracts\Verivox.EnergyCostCalculator.Coe.Contracts.ApplicationService\Verivox.EnergyCostCalculator.Coe.Contracts.ApplicationService.csproj", "{777BA478-B026-40CD-8107-404BD634B669}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Verivox.EnergyCostCalculator.Core.Services.ApplicationService", "core\services\Verivox.EnergyCostCalculator.Core.Services.ApplicationService\Verivox.EnergyCostCalculator.Core.Services.ApplicationService.csproj", "{353FF577-CD0C-43C3-A408-9833FA58D8E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Verivox.EnergyCostCalculator.Core.Services.ApplicationService", "src\core\services\Verivox.EnergyCostCalculator.Core.Services.ApplicationService\Verivox.EnergyCostCalculator.Core.Services.ApplicationService.csproj", "{353FF577-CD0C-43C3-A408-9833FA58D8E8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3399ABA0-DFB0-4290-A868-7E18C69C742E}"
 EndProject

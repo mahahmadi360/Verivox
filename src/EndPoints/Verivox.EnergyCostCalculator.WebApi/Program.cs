@@ -1,6 +1,6 @@
 using Verivox.EnergyCostCalculator.Infrastructure.ExternalServices;
 using Verivox.EnergyCostCalculator.Core.Services.ApplicationService;
-using Verivox.EnergyCostCalculator.Coe.Contracts.ApplicationService;
+using Verivox.EnergyCostCalculator.Core.Contracts.ApplicationService;
 
 var builder = WebApplication.CreateBuilder(args);
 
