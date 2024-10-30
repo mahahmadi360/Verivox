@@ -11,8 +11,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EndPoints", "EndPoints", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{B77F41A2-FE1F-40A8-B026-2678D80EAB1B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Verivox.EnergyCostCalculator.Infrastructure.Contracts", "src\Infrastructure\Verivox.EnergyCostCalculator.Infrastructure.Contracts\Verivox.EnergyCostCalculator.Infrastructure.Contracts.csproj", "{E9D89D68-EED6-458C-A5B1-73FA00AF70B4}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Verivox.EnergyCostCalculator.Infrastructure.ExternalServices", "src\Infrastructure\Verivox.EnergyCostCalculator.Infrastructure.ExternalServices\Verivox.EnergyCostCalculator.Infrastructure.ExternalServices.csproj", "{AC26A9D9-826E-4708-9D9F-DCF512D23D8C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{C5B50371-8132-4980-9806-42395F5B455D}"
@@ -20,8 +18,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contracts", "Contracts", "{850F34E4-DD61-41F9-B2A6-91239818654E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{C23108C9-7AFE-4E47-8C24-3CAB9B1A5EB2}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Verivox.EnergyCostCalculator.Coe.Contracts.ApplicationService", "src\Core\Contracts\Verivox.EnergyCostCalculator.Coe.Contracts.ApplicationService\Verivox.EnergyCostCalculator.Coe.Contracts.ApplicationService.csproj", "{777BA478-B026-40CD-8107-404BD634B669}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Verivox.EnergyCostCalculator.Core.Services.ApplicationService", "src\Core\Services\Verivox.EnergyCostCalculator.Core.Services.ApplicationService\Verivox.EnergyCostCalculator.Core.Services.ApplicationService.csproj", "{353FF577-CD0C-43C3-A408-9833FA58D8E8}"
 EndProject
@@ -38,6 +34,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Verivox.EnergyCostCalculator.Infrastructure.Contracts", "src\Core\Contracts\Verivox.EnergyCostCalculator.Infrastructure.Contracts\Verivox.EnergyCostCalculator.Infrastructure.Contracts.csproj", "{E0A0DD73-4F9C-4A55-B161-F4CABE0E193A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Verivox.EnergyCostCalculator.ApplicationService.Contracts", "src\Core\Contracts\Verivox.EnergyCostCalculator.ApplicationService.Contracts\Verivox.EnergyCostCalculator.ApplicationService.Contracts.csproj", "{F68B7041-8641-474C-B084-2002D23BEC49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,18 +48,10 @@ Global
 		{EDA12FA6-D4F5-4DC5-8C50-D870BBB73566}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDA12FA6-D4F5-4DC5-8C50-D870BBB73566}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDA12FA6-D4F5-4DC5-8C50-D870BBB73566}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E9D89D68-EED6-458C-A5B1-73FA00AF70B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E9D89D68-EED6-458C-A5B1-73FA00AF70B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E9D89D68-EED6-458C-A5B1-73FA00AF70B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E9D89D68-EED6-458C-A5B1-73FA00AF70B4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AC26A9D9-826E-4708-9D9F-DCF512D23D8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AC26A9D9-826E-4708-9D9F-DCF512D23D8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC26A9D9-826E-4708-9D9F-DCF512D23D8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC26A9D9-826E-4708-9D9F-DCF512D23D8C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{777BA478-B026-40CD-8107-404BD634B669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{777BA478-B026-40CD-8107-404BD634B669}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{777BA478-B026-40CD-8107-404BD634B669}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{777BA478-B026-40CD-8107-404BD634B669}.Release|Any CPU.Build.0 = Release|Any CPU
 		{353FF577-CD0C-43C3-A408-9833FA58D8E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{353FF577-CD0C-43C3-A408-9833FA58D8E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{353FF577-CD0C-43C3-A408-9833FA58D8E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -68,6 +60,14 @@ Global
 		{AE7F4179-B018-4F2C-9C83-9C89B24C66E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE7F4179-B018-4F2C-9C83-9C89B24C66E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE7F4179-B018-4F2C-9C83-9C89B24C66E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0A0DD73-4F9C-4A55-B161-F4CABE0E193A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0A0DD73-4F9C-4A55-B161-F4CABE0E193A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0A0DD73-4F9C-4A55-B161-F4CABE0E193A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0A0DD73-4F9C-4A55-B161-F4CABE0E193A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F68B7041-8641-474C-B084-2002D23BEC49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F68B7041-8641-474C-B084-2002D23BEC49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F68B7041-8641-474C-B084-2002D23BEC49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F68B7041-8641-474C-B084-2002D23BEC49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,16 +76,16 @@ Global
 		{EDA12FA6-D4F5-4DC5-8C50-D870BBB73566} = {1B5D4679-1BB6-418F-A1CD-F9DE298522AB}
 		{1B5D4679-1BB6-418F-A1CD-F9DE298522AB} = {3D89BE82-DC43-4A0E-A9B5-11A4C1D21FF8}
 		{B77F41A2-FE1F-40A8-B026-2678D80EAB1B} = {3D89BE82-DC43-4A0E-A9B5-11A4C1D21FF8}
-		{E9D89D68-EED6-458C-A5B1-73FA00AF70B4} = {B77F41A2-FE1F-40A8-B026-2678D80EAB1B}
 		{AC26A9D9-826E-4708-9D9F-DCF512D23D8C} = {B77F41A2-FE1F-40A8-B026-2678D80EAB1B}
 		{C5B50371-8132-4980-9806-42395F5B455D} = {3D89BE82-DC43-4A0E-A9B5-11A4C1D21FF8}
 		{850F34E4-DD61-41F9-B2A6-91239818654E} = {C5B50371-8132-4980-9806-42395F5B455D}
 		{C23108C9-7AFE-4E47-8C24-3CAB9B1A5EB2} = {C5B50371-8132-4980-9806-42395F5B455D}
-		{777BA478-B026-40CD-8107-404BD634B669} = {850F34E4-DD61-41F9-B2A6-91239818654E}
 		{353FF577-CD0C-43C3-A408-9833FA58D8E8} = {C23108C9-7AFE-4E47-8C24-3CAB9B1A5EB2}
 		{0C3330A3-38DB-4AF0-93A3-16BBC488BF15} = {3399ABA0-DFB0-4290-A868-7E18C69C742E}
 		{5141C0C2-826E-49E2-8072-5FCD33AD492F} = {0C3330A3-38DB-4AF0-93A3-16BBC488BF15}
 		{AE7F4179-B018-4F2C-9C83-9C89B24C66E6} = {5141C0C2-826E-49E2-8072-5FCD33AD492F}
+		{E0A0DD73-4F9C-4A55-B161-F4CABE0E193A} = {850F34E4-DD61-41F9-B2A6-91239818654E}
+		{F68B7041-8641-474C-B084-2002D23BEC49} = {850F34E4-DD61-41F9-B2A6-91239818654E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7CB73B75-C4B2-4B7E-BF5C-32554A12F68E}

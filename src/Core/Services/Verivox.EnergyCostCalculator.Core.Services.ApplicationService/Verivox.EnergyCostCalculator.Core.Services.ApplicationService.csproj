@@ -11,10 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Contracts\Verivox.EnergyCostCalculator.Coe.Contracts.ApplicationService\Verivox.EnergyCostCalculator.Coe.Contracts.ApplicationService.csproj" />
+    <InternalsVisibleTo Include="Verivox.ECC.Core.Services.ApplicationService.Test" />
   </ItemGroup>
 
   <ItemGroup>
-    <InternalsVisibleTo Include="Verivox.ECC.Core.Services.ApplicationService.Test" />
+    <ProjectReference Include="..\..\Contracts\Verivox.EnergyCostCalculator.ApplicationService.Contracts\Verivox.EnergyCostCalculator.ApplicationService.Contracts.csproj" />
   </ItemGroup>
 </Project>
