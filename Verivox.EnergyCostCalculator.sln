@@ -31,7 +31,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{0C3330A3-3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{5141C0C2-826E-49E2-8072-5FCD33AD492F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Verivox.ECC.Core.Services.ApplicationService.Test", "test\Core\Serivces\Verivox.EnergyCostCalculator.Core.Services.ApplicationService.Test\Verivox.ECC.Core.Services.ApplicationService.Test.csproj", "{AE7F4179-B018-4F2C-9C83-9C89B24C66E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Verivox.ECC.Core.Services.ApplicationService.Test", "test\Core\Serivces\Verivox.EnergyCostCalculator.Core.Services.ApplicationService.Test\Verivox.ECC.Core.Services.ApplicationService.Test.csproj", "{AE7F4179-B018-4F2C-9C83-9C89B24C66E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D6E8571C-C84C-4502-9CB4-A17440FDF01A}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
