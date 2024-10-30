@@ -29,13 +29,13 @@
 `cd Verivox`
 
 ### Checkout source code
-`git clone https://github.com/mahahmadi360/Verivox.git`
+`sudo git clone https://github.com/mahahmadi360/Verivox.git`
 
 ### Redirect to end point project
 `cd Verivox/src/EndPoints/Verivox.EnergyCostCalculator.WebApi`
 
 ### Publish end point
-`dotnet publish -c release -o ../../../publish`
+`sudo dotnet publish -c release -o ../../../publish`
 
 ### Redirect to publish folder
 `cd ../../../publish`
