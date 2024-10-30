@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\core\contracts\Verivox.EnergyCostCalculator.Coe.Contracts.ApplicationService\Verivox.EnergyCostCalculator.Coe.Contracts.ApplicationService.csproj" />
-    <ProjectReference Include="..\..\core\services\Verivox.EnergyCostCalculator.Core.Services.ApplicationService\Verivox.EnergyCostCalculator.Core.Services.ApplicationService.csproj" />
+    <ProjectReference Include="..\..\Core\Contracts\Verivox.EnergyCostCalculator.Coe.Contracts.ApplicationService\Verivox.EnergyCostCalculator.Coe.Contracts.ApplicationService.csproj" />
+    <ProjectReference Include="..\..\Core\Services\Verivox.EnergyCostCalculator.Core.Services.ApplicationService\Verivox.EnergyCostCalculator.Core.Services.ApplicationService.csproj" />
     <ProjectReference Include="..\..\Infrastructure\Verivox.EnergyCostCalculator.Infrastructure.ExternalServices\Verivox.EnergyCostCalculator.Infrastructure.ExternalServices.csproj" />
   </ItemGroup>
 

@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\contracts\Verivox.EnergyCostCalculator.Coe.Contracts.ApplicationService\Verivox.EnergyCostCalculator.Coe.Contracts.ApplicationService.csproj" />
+    <ProjectReference Include="..\..\Contracts\Verivox.EnergyCostCalculator.Coe.Contracts.ApplicationService\Verivox.EnergyCostCalculator.Coe.Contracts.ApplicationService.csproj" />
   </ItemGroup>
 
   <ItemGroup>
